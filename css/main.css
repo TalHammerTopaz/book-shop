@@ -1,0 +1,203 @@
+
+
+*{
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive ; 
+    color: darkslategray
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+    position: relative;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+.change-lang{
+    margin-left: 70%;
+ 
+}
+
+.container {
+
+    width: fit-content;
+    height: 80vh;
+    padding: 20px;
+    margin: 2em auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    opacity: 0.9;
+ 
+}
+
+h1 {
+
+    font-size: 3em;
+}
+
+
+table {
+    width: fit-content;
+    margin: auto;
+}
+
+td, th { 
+    height: 2em;
+    width: fit-content;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px 4px #e7ece8;
+    background-color:whitesmoke ;
+}
+
+img {
+    height: 5em;
+    width: 5em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 1px 2px 8px 4px #929793;
+    display: block;
+}
+
+
+
+.add-new-book {
+    font-size: 1em;
+
+}
+
+button {
+    color: #e9e9f0; 
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 10px; 
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 8px 4px #929793;
+    border: none;
+    font-style: italic;
+    background-color: darkslategray;
+    
+}
+
+.read{
+    background-color: lightseagreen
+}
+
+.update{
+    background-color: lightcoral
+}
+
+.delete {
+    background-color: rgb(201, 78, 78) ;
+
+}
+
+.price-update{
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    color: #e9e9f0; 
+    font-size: 20px;
+    padding: 1em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkseagreen ;
+    opacity: 0.95;
+    border: none;
+    box-shadow: 1px 2px 8px 4px #929793; 
+    transition: 1s;
+
+    display: none;
+
+
+}
+
+.modal {
+    position: fixed;
+    top: 5em;
+    right: 0;
+    color: #e9e9f0; 
+    font-size: 20px;
+    padding: 1em;
+    width: 25em;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkseagreen ;
+    opacity: 0.95;
+    border: none;
+    box-shadow: 1px 2px 8px 4px #929793; 
+    transition: 1s;
+
+    display: none;
+    animation: modal;
+    animation-duration: 1s;
+    
+
+}
+
+.modal img {
+   border: 2px solid darkslategray; 
+
+}
+
+.modal button {
+
+    font-size: 1em;
+  
+}
+
+
+@keyframes modal{
+    0% {right:-25em;}
+    100% {right: 0;}
+}
+
+
+
+p {
+    color: #e9e9f0; 
+    font-size: 1em;
+    text-align: center;
+
+}
+
+h2, h3 {
+    color: #e9e9f0; 
+    font-weight: lighter;
+ 
+}
+
+h3 {
+    color: khaki;
+}
+
+.rate {
+    border: 2px solid darkslategray; 
+    border-radius: 5%;
+    width: fit-content;
+    margin: auto;
+    padding-left: 1em;
+
+}
+
+h5 {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.page-buttons{
+    display: inline-block;
+}

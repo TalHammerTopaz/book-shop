@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload = "init()"">
+    <div class = "container">
+        <h1 data-trans="header"> My Book Shop</h1>
+        <select class = "change-lang" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+        <br>
+        <button data-trans="add-book" class="add-new-book" onclick ="onAddBook()">Add Book</button>
+        <section>
+            <div>
+                <h5 data-trans="filter-by"></h5>
+                <input type="text" data-trans="placeholder" class= "filter-title" oninput="onSetFilterBy({title: this.value})" placeholder="Start typing..." />
+                <label>
+                    <span data-trans="min-rating"></span>
+                    <input type="range" min="0" max="10" value="10"
+                    class="filter-rate-range" 
+                    onchange="this.title=this.value; onSetFilterBy({rate: this.value})" />
+                    <span data-trans="max-price"></span></span>
+                    <input type="range" min="0" max="100" value="100"
+                    class="filter-price-range" 
+                    onchange="this.title=this.value; onSetFilterBy({price: this.value})" />
+                </label> 
+            </div>
+        </section>
+        <button class="prev-page" onclick="onPageChange('prev')"><<Previous Page>></button>
+        <div class="page-buttons"></div>
+        <button class="next-page" onclick="onPageChange('next')">>></button>
+        <table>
+            <thead>
+                <tr>
+                    <th data-trans="id">ID</th>
+                    <th data-trans="title" onclick = "onSortBy('title')">Title</th>
+                    <th data-trans="price" onclick = "onSortBy('price')">Price</th>
+                    <th data-trans="picture">Picture</th>
+                    <th data-trans="rating">Rating</th>
+                    <th data-trans="actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="price-update">
+    </div>
+
+    
+
+    <div class="modal">
+    </div>
+
+
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/bookshop.i18n.service.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/bookshop.service.js"></script> 
+    <script src="js/bookshop.controller.js"></script>
+ 
+</body>
+</html>
