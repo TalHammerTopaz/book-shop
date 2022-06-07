@@ -15,6 +15,7 @@ function init(){
 }
 
 
+// some new comment
 
 function renderBooks(){
 
